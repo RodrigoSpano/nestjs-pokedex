@@ -1,7 +1,7 @@
 import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 import { User } from '../entities/user.entity';
-import { IJwtPayload } from '../interfaces/jwt-payload.interface';
+import { IJwtPayload } from '../interfaces';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Injectable, UnauthorizedException } from '@nestjs/common';
